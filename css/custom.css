@@ -41,3 +41,26 @@ li:hover~li p {
     transform: rotate(-15deg);
   }
 }
+
+.skills-icon {
+  border-radius: 50%;
+  width: 40px;
+  animation-name: pulse;
+  animation-fill-mode: both;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
