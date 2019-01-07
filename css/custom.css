@@ -21,3 +21,23 @@
   padding-right: 0;
   padding-left: 0;
 }
+
+li:hover~li p {
+  animation: wave-animation 0.3s infinite;
+}
+
+@keyframes wave-animation {
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(20deg);
+  }
+
+  75% {
+    transform: rotate(-15deg);
+  }
+}
