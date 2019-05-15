@@ -1,17 +1,38 @@
-# Haresh Vekriya Portfolio
+# Bal Krishna Nursery by Woolwich Temple
 
-This my repository to personal portfolio and it contains all the codes and assets used.
+## How to launch this project in your local environment
 
-## Built With
+Run the following commands:
 
-* [Bootstrap](http://www.get.bootstrap.com) - The web framework used
+```bash
+npm install
+npm start
+```
 
-## Authors
+NOTE: You will need access to Prismic.io
 
-* [Haresh Vekriya](https://github.com/hvekriya)
+Then you can access it at [http://localhost:8080](http://localhost:8080).
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+## Project setup
 
-## Acknowledgments
+```bash
+npm install
+```
 
-* Hat tip to anyone who's code was used
+### Compiles and hot-reloads for development
+
+```bash
+npm start
+```
+
+### Compiles and minifies for production
+
+```bash
+npm run build
+```
+
+### Lints and fixes files
+
+```bash
+npm run lint
+```

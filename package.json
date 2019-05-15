@@ -1,0 +1,34 @@
+{
+  "name": "haresh-vekriya",
+  "version": "1.2.0",
+  "description": "My person website managed in Prismic and built using Vue",
+  "author": "hvekriya",
+  "scripts": {
+    "build": "vue-cli-service build",
+    "start": "vue-cli-service serve"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "hooper": "0.1.2",
+    "moment": "^2.24.0",
+    "nprogress": "^0.2.0",
+    "prerender-spa-plugin": "^3.4.0",
+    "prismic-dom": "^2.1.0",
+    "prismic-vue": "^1.3.0",
+    "register-service-worker": "^1.5.2",
+    "vue": "^2.6.7",
+    "vue-carousel": "^0.18.0-alpha",
+    "vue-highlightjs": "^1.3.3",
+    "vue-router": "^3.0.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.6.0",
+    "@vue/cli-plugin-pwa": "^3.6.0",
+    "@vue/cli-service": "^3.6.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "license": "Apache-2.0",
+  "repository": "https: //github.com/hvekriya/hvekriya.github.io"
+}

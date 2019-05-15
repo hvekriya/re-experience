@@ -1,0 +1,38 @@
+@import "prismic-edit-button";
+@import "resetr";
+@import "./sass_modules/variables";
+@import "./sass_modules/timeline";
+@import "./sass_modules/masthead";
+
+.jumbotron {
+  border-radius: 0;
+}
+
+.navbar-dark .navbar-toggler {
+  color: white;
+  border: none;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.shadow-sm {
+  box-shadow: none !important;
+}
+
+.card {
+  border: none;
+}
+
+.card-body {
+  padding-right: 0;
+  padding-left: 0;
+}
