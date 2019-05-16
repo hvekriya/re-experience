@@ -36,3 +36,8 @@
   padding-right: 0;
   padding-left: 0;
 }
+
+.block-img img {
+  // Allows the prismic image to use bootstrap reponsive class
+  max-width: 100%;
+}
