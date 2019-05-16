@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["view-NotFound-vue"],{9703:function(e,n,t){"use strict";t.r(n);var o=function(){var e=this,n=e.$createElement;e._self._c;return e._m(0)},r=[function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",{staticClass:"wrapper container"},[t("h1",[e._v("Not Found")])])}],u={name:"NotFound"},a=u,c=t("2877"),s=Object(c["a"])(a,o,r,!1,null,null,null);n["default"]=s.exports}}]);
-//# sourceMappingURL=view-NotFound-vue.3f1d83fd.js.map

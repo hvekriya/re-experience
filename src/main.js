@@ -6,10 +6,7 @@ import App from "./App.vue";
 import router from "./router";
 import "./registerServiceWorker";
 
-const accessToken =
-  process.env.VUE_APP_PRISMIC ||
-  "MC5YTkxnS2hBQUFQT0tjMXV6.77-977-977-9fO-_vWQK77-9I1rvv71WNe-_ve-_vX7vv71aSu-_ve-_vRcs77-9awVBFlnvv71WHg";
-
+const accessToken = process.env.VUE_APP_PRISMIC;
 Vue.config.productionTip = false;
 
 Vue.use(PrismicVue, {
