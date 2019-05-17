@@ -8,8 +8,11 @@
         <h1 class="jumbotron-heading">Haresh Vekriya</h1>
         <p class="lead">UX Designer/Front-End Developer</p>
         <p>
-          <!-- <a href="/skills" class="btn btn-light m-2">Skills</a> -->
           <a href="/experience" class="btn btn-light m-2">Experience timeline</a>
+          <a
+            href="/https://drive.google.com/file/d/1yqg2e0DIoe9NPoNETT-d9vmuRfEaGR5O/view?usp=sharing"
+            class="btn btn-light m-2" target="_blank"
+          >See my latest CV</a>
         </p>
       </div>
     </section>
