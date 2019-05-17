@@ -8,7 +8,7 @@
         <h1 class="jumbotron-heading">Haresh Vekriya</h1>
         <p class="lead">UX Designer/Front-End Developer</p>
         <p>
-          <a href="/" class="btn btn-light m-2">Latest projects</a>
+          <a href="/" class="btn m-2">Latest projects</a>
         </p>
       </div>
     </section>

@@ -1,7 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
-$font-stack: "Montserrat", sans-serif;
-$font-color: #2e4a62;
-
 @mixin clearfix {
   content: "";
   position: absolute;
@@ -32,16 +28,16 @@ $font-color: #2e4a62;
       @include clearfix();
       left: -14px;
       height: 110%;
-      @include set-border(2px, $font-color, none);
+      @include set-border(2px, $purple, none);
     }
     & > span::before,
     & > span::after {
       @include clearfix();
       width: 14px;
       height: 14px;
-      @include set-border(3px, $font-color, 50%);
+      @include set-border(3px, $purple, 50%);
       left: -7px;
-      background: $font-color;
+      background: $purple;
     }
     & > span::before {
       top: -15px;
@@ -57,7 +53,7 @@ $font-color: #2e4a62;
       &:nth-child(4) {
         font-size: 1em;
         font-style: italic;
-        color: darken($font-color, 25%);
+        color: darken($purple, 25%);
       }
     }
     .year span {

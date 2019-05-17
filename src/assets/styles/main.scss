@@ -1,6 +1,8 @@
 @import "prismic-edit-button";
 @import "resetr";
 @import "./sass_modules/variables";
+@import "./sass_modules/overrides";
+@import "./sass_modules/button";
 @import "./sass_modules/timeline";
 @import "./sass_modules/masthead";
 
@@ -40,12 +42,4 @@
 .block-img img {
   // Allows the prismic image to use bootstrap reponsive class
   max-width: 100%;
-}
-
-ul {
-  margin-left: 20px;
-}
-
-ol {
-  margin-left: 20px;
 }

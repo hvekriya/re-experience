@@ -1,0 +1,49 @@
+.btn {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: $white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: hsl(236, 32%, 26%);
+  border-radius: 0.25rem;
+}
+
+.btn::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $primary;
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+  border-radius: 0.25rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+a.btn:hover {
+  border-radius: 0.25rem;
+  color: $white;
+}
+
+.btn:hover::before {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+  border: 2px solid $orange;
+}

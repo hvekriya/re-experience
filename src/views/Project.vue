@@ -10,7 +10,7 @@
           <prismic-rich-text :field="project.title"/>
         </h1>
         <p>
-          <a href="/" class="btn btn-light m-2">Back to projects</a>
+          <a href="/" class="btn m-2">Back to projects</a>
         </p>
       </div>
     </section>
