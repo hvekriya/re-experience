@@ -16,7 +16,7 @@
     <div class="album">
       <div class="container">
         <p class="h2 pb-4">My experience</p>
-        <section class="timeline">
+        <section class="timeline animated slideInUp">
           <ul>
             <template v-for="(slice, index) in fields.slices">
               <template v-if="slice.slice_type === 'faq'">
