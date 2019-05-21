@@ -22,6 +22,11 @@ export default new Router({
       component: loadView("Project")
     },
     {
+      path: "/article/:uid",
+      name: "Article",
+      component: loadView("Article")
+    },
+    {
       path: "/experience",
       name: "Experience",
       component: loadView("Experience")

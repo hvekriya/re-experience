@@ -45,6 +45,12 @@
               <li style="width: 20px; height:20px;">
                 <p>👋</p>
               </li>
+              <li>
+                <input type="checkbox" id="theme-toggle" v-model="nightMode">
+                <label for="theme-toggle">
+                  <span></span>
+                </label>
+              </li>
             </ul>
           </div>
         </div>
@@ -73,6 +79,17 @@
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  data() {
+    return {
+      nightMode: false
+    };
+  },
+  watch: {
+    nightMode: function() {
+      // Emit this information to the parents component
+      this.$emit("nightMode-toggle", this.nightMode);
+    }
+  }
 };
 </script>

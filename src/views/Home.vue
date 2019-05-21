@@ -51,6 +51,40 @@
         </div>
       </div>
     </div>
+
+    <div class="album">
+      <div class="container">
+        <p class="h2 pb-4">Latest articles</p>
+        <div class="row">
+          <div
+            class="col-md-4 animated pulse bounce"
+            v-for="(item, index) in articles"
+            :key="'project-' + index"
+          >
+            <div
+              class="card mb-4 shadow p-3 mb-5 bg-white rounded"
+              v-for="(title, index) in item.data.title"
+              :key="'project-' + index"
+            >
+              <img
+                class="bd-placeholder-img card-img-top"
+                :src="item.data.cover.url"
+                :alt="item.data.cover.alt"
+              >
+              <div class="card-body">
+                <h5 class="card-title">{{ title.text }}</h5>
+                <p class="card-text">{{ item.data.content | readMore(200, ' ...') }}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group w-100">
+                    <a :href="'/article/' + item.uid">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -60,6 +94,7 @@ export default {
   data() {
     return {
       projects: null,
+      articles: null,
       cover: {
         url:
           "https://images.unsplash.com/flagged/photo-1551301622-6fa51afe75a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
@@ -67,7 +102,7 @@ export default {
     };
   },
   methods: {
-    getContent() {
+    getProjects() {
       this.$prismic.client
         .query(this.$prismic.Predicates.at("document.type", "projects"), {
           orderings: "[document.first_publication_date]"
@@ -82,13 +117,31 @@ export default {
             });
           }
         });
+    },
+    getArticles() {
+      this.$prismic.client
+        .query(this.$prismic.Predicates.at("document.type", "blog"), {
+          orderings: "[document.first_publication_date]"
+        })
+        .then(document => {
+          if (document) {
+            console.log(document);
+            this.articles = document.results;
+          } else {
+            this.$router.push({
+              name: "not-found"
+            });
+          }
+        });
     }
   },
   created() {
-    this.getContent();
+    this.getProjects();
+    this.getArticles();
   },
   beforeRouteUpdate(to, from, next) {
-    this.getContent();
+    this.getProjects();
+    this.getArticles();
     next();
   }
 };

@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <Header/>
+  <div id="app" v-bind:class="{ 'theme-dark' : mode }">
+    <Header @nightMode-toggle="nightMode"/>
     <transition
       name="custom-classes-transition"
       enter-active-class="animated fadeIn"
@@ -17,6 +17,17 @@ export default {
   name: "App",
   components: {
     Header
+  },
+  data() {
+    return {
+      mode: false
+    };
+  },
+  methods: {
+    // Gets the nightmode toggle information from the child component
+    nightMode: function(params) {
+      this.mode = params;
+    }
   }
 };
 </script>
