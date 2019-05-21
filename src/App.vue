@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Header/>
     <transition
       name="custom-classes-transition"
       enter-active-class="animated fadeIn"
@@ -11,8 +12,12 @@
 </template>
 
 <script>
+import Header from "./components/Header";
 export default {
-  name: "App"
+  name: "App",
+  components: {
+    Header
+  }
 };
 </script>
 

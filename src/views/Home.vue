@@ -28,7 +28,7 @@
             :key="'project-' + index"
           >
             <div
-              class="card mb-4 shadow-sm"
+              class="card mb-4 shadow p-3 mb-5 bg-white rounded"
               v-for="(title, index) in item.data.title"
               :key="'project-' + index"
             >
