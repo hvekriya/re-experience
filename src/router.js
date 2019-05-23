@@ -17,14 +17,19 @@ export default new Router({
       component: loadView("Home")
     },
     {
+      path: "/blog",
+      name: "Blog",
+      component: loadView("Blog")
+    },
+    {
       path: "/project/:uid",
       name: "Project",
       component: loadView("Project")
     },
     {
-      path: "/article/:uid",
-      name: "Article",
-      component: loadView("Article")
+      path: "/blog/post/:uid",
+      name: "Post",
+      component: loadView("Post")
     },
     {
       path: "/experience",

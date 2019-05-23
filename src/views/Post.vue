@@ -10,7 +10,7 @@
           <prismic-rich-text :field="article.title"/>
         </h1>
         <p>
-          <a href="/" class="btn m-2">Back to articles</a>
+          <a href="/" class="btn m-2">Go back</a>
         </p>
       </div>
     </section>
@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: "Article",
+  name: "Post",
   data() {
     return {
       article: null

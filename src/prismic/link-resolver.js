@@ -15,7 +15,7 @@ export default function(doc) {
     return "/project/" + doc.id;
   }
   if (doc.type === "blog") {
-    return "/article/" + doc.id;
+    return "/blog/post/" + doc.id;
   }
   if (doc.type === "experience") {
     return "/experience";

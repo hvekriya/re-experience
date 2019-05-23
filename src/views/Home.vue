@@ -49,16 +49,17 @@
             </div>
           </div>
         </div>
+        <!-- <a href="/projects" class="btn m-2">View all projects</a> -->
       </div>
     </div>
 
     <div class="album">
       <div class="container">
-        <p class="h2 pb-4">Latest articles</p>
+        <p class="h2 pb-4">Blog</p>
         <div class="row">
           <div
             class="col-md-4 animated pulse bounce"
-            v-for="(item, index) in articles"
+            v-for="(item, index) in posts"
             :key="'project-' + index"
           >
             <div
@@ -76,13 +77,14 @@
                 <p class="card-text">{{ item.data.content | readMore(200, ' ...') }}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group w-100">
-                    <a :href="'/article/' + item.uid">Read more</a>
+                    <a :href="'/blog/post/' + item.uid">Read more</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <a href="/blog" class="btn m-2">View more posts</a>
       </div>
     </div>
   </main>
@@ -94,7 +96,7 @@ export default {
   data() {
     return {
       projects: null,
-      articles: null,
+      posts: null,
       cover: {
         url:
           "https://images.unsplash.com/flagged/photo-1551301622-6fa51afe75a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
@@ -118,7 +120,7 @@ export default {
           }
         });
     },
-    getArticles() {
+    getBlogPosts() {
       this.$prismic.client
         .query(this.$prismic.Predicates.at("document.type", "blog"), {
           orderings: "[document.first_publication_date]"
@@ -126,7 +128,7 @@ export default {
         .then(document => {
           if (document) {
             console.log(document);
-            this.articles = document.results;
+            this.posts = document.results;
           } else {
             this.$router.push({
               name: "not-found"
@@ -137,11 +139,11 @@ export default {
   },
   created() {
     this.getProjects();
-    this.getArticles();
+    this.getBlogPosts();
   },
   beforeRouteUpdate(to, from, next) {
     this.getProjects();
-    this.getArticles();
+    this.getBlogPosts();
     next();
   }
 };
