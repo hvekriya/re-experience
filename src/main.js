@@ -5,6 +5,7 @@ import htmlSerializer from "./prismic/html-serializer";
 import App from "./App.vue";
 import router from "./router";
 import "./registerServiceWorker";
+import moment from "moment";
 
 const accessToken = process.env.VUE_APP_PRISMIC;
 Vue.config.productionTip = false;
@@ -31,6 +32,10 @@ Vue.filter("truncate", function(value) {
     value = value.substring(0, 17) + "...";
   }
   return value;
+});
+
+Vue.filter("formatDate", function(date) {
+  return moment(date).format("MMMM Do YYYY");
 });
 
 Vue.prototype.$scrollToTop = () => window.scrollTo(0, 0);

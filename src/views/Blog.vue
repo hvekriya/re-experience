@@ -65,7 +65,7 @@ export default {
     getContent() {
       this.$prismic.client
         .query(this.$prismic.Predicates.at("document.type", "blog"), {
-          orderings: "[document.first_publication_date]"
+          orderings: "[document.last_publication_date]"
         })
         .then(document => {
           if (document) {

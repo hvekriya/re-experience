@@ -75,6 +75,7 @@
               <div class="card-body">
                 <h5 class="card-title">{{ title.text }}</h5>
                 <p class="card-text">{{ item.data.content | readMore(200, ' ...') }}</p>
+                <p class="text-muted">Posted on {{ item.first_publication_date | formatDate() }}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group w-100">
                     <a :href="'/blog/post/' + item.uid">Read more</a>
@@ -107,7 +108,7 @@ export default {
     getProjects() {
       this.$prismic.client
         .query(this.$prismic.Predicates.at("document.type", "projects"), {
-          orderings: "[document.first_publication_date]"
+          orderings: "[my.projects.date desc]"
         })
         .then(document => {
           if (document) {
@@ -123,7 +124,7 @@ export default {
     getBlogPosts() {
       this.$prismic.client
         .query(this.$prismic.Predicates.at("document.type", "blog"), {
-          orderings: "[document.first_publication_date]"
+          orderings: "[document.last_publication_date]"
         })
         .then(document => {
           if (document) {

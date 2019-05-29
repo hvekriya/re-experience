@@ -9,6 +9,9 @@
         <h1 class="jumbotron-heading">
           <prismic-rich-text :field="article.title"/>
         </h1>
+        <center>
+          <p class="text-white">Posted on {{ article.first_publication_date | formatDate() }}</p>
+        </center>
         <p>
           <a href="/" class="btn m-2">Go back</a>
         </p>
