@@ -85,7 +85,7 @@
             </div>
           </div>
         </div>
-        <a href="/blog" class="btn m-2">View more posts</a>
+        <!-- <a href="/blog" class="btn m-2">View more posts</a> -->
       </div>
     </div>
   </main>
