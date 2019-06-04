@@ -22,7 +22,7 @@
       <div class="container">
         <p class="h2 pb-4">Latest projects</p>
         <div class="filter-pannel mb-4">
-          <ul class="ks-cboxtags">
+          <ul>
             <li v-for="(tag, index) in tags" :key="index" class="m-1">
               <input
                 type="checkbox"
@@ -63,7 +63,7 @@
                 <span
                   v-for="(tag, index) in item.tags"
                   :key="index"
-                  class="badge badge-pill text-white mt-2"
+                  class="badge badge-pill badge-light mt-2"
                 >{{ tag }}</span>
               </div>
             </div>

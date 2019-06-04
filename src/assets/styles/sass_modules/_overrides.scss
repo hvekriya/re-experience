@@ -52,9 +52,9 @@ pre {
 .badge {
   padding: 6px;
   margin-right: 6px;
-  background-color: $blue;
+  font-weight: 400;
 
-  &.selected {
-    background-color: $purple;
+  &.badge-light {
+    background-color: $gray-300;
   }
 }
