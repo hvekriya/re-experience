@@ -40,12 +40,12 @@
   font-weight: 900;
   font-size: 12px;
   padding: 2px 6px 2px 2px;
-  content: "plus";
+  // content: "plus";
   transition: transform 0.3s ease-in-out;
 }
 
 .filter-pannel ul li input[type="checkbox"]:checked + label::before {
-  content: "check";
+  // content: "check";
   transform: rotate(-360deg);
   transition: transform 0.3s ease-in-out;
 }
