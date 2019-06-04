@@ -82,6 +82,7 @@ export default {
   name: "Header",
   data() {
     return {
+      sessionStorage: window.sessionStorage,
       nightMode: false
     };
   },

@@ -48,3 +48,13 @@ pre {
   color: $orange;
   border-radius: 20px;
 }
+
+.badge {
+  padding: 6px;
+  margin-right: 6px;
+  background-color: $blue;
+
+  &.selected {
+    background-color: $purple;
+  }
+}

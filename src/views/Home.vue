@@ -21,10 +21,25 @@
     <div class="album">
       <div class="container">
         <p class="h2 pb-4">Latest projects</p>
+        <div class="filter-pannel mb-4">
+          <ul class="ks-cboxtags">
+            <li v-for="(tag, index) in tags" :key="index" class="m-1">
+              <input
+                type="checkbox"
+                :id="`checkbox-${index}`"
+                :value="tag.value"
+                v-model="tag.checked"
+                v-on:change="getfilteredData"
+              >
+              <label :for="`checkbox-${index}`">{{tag.value}}</label>
+            </li>
+          </ul>
+        </div>
+
         <div class="row">
           <div
             class="col-md-4 animated pulse bounce"
-            v-for="(item, index) in projects"
+            v-for="(item, index) in filteredProjects"
             :key="'project-' + index"
           >
             <div
@@ -45,6 +60,11 @@
                     <a :href="'/project/' + item.uid">Read more</a>
                   </div>
                 </div>
+                <span
+                  v-for="(tag, index) in item.tags"
+                  :key="index"
+                  class="badge badge-pill text-white mt-2"
+                >{{ tag }}</span>
               </div>
             </div>
           </div>
@@ -97,12 +117,24 @@ export default {
   data() {
     return {
       projects: null,
+      filteredProjects: null,
       posts: null,
       cover: {
         url:
           "https://images.unsplash.com/flagged/photo-1551301622-6fa51afe75a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
-      }
+      },
+      tags: []
     };
+  },
+  computed: {
+    selectedFilters: function() {
+      let filters = [];
+      let checkedFiters = this.tags.filter(obj => obj.checked);
+      checkedFiters.forEach(element => {
+        filters.push(element.value);
+      });
+      return filters;
+    }
   },
   methods: {
     getProjects() {
@@ -112,8 +144,22 @@ export default {
         })
         .then(document => {
           if (document) {
-            console.log(document);
             this.projects = document.results;
+            this.filteredProjects = this.projects;
+
+            var tags = document.results
+              .map(project => project.tags)
+              .map(tags => tags);
+            var merged = [].concat.apply([], tags);
+            var uniqueTags = [];
+
+            $.each(merged, function(i, el) {
+              if ($.inArray(el, uniqueTags) === -1) uniqueTags.push(el);
+            });
+
+            this.tags = uniqueTags.map(tags => {
+              return { checked: false, value: tags };
+            });
           } else {
             this.$router.push({
               name: "not-found"
@@ -128,7 +174,6 @@ export default {
         })
         .then(document => {
           if (document) {
-            console.log(document);
             this.posts = document.results;
           } else {
             this.$router.push({
@@ -136,7 +181,22 @@ export default {
             });
           }
         });
+    },
+    getfilteredData: function() {
+      // first check if filters where selected
+      if (this.selectedFilters.length > 0) {
+        this.filteredProjects = this.projects.filter(project =>
+          this.selectedFilters.every(val => project.tags.indexOf(val) >= 0)
+        );
+      }
+      if (this.selectedFilters.length === 0) {
+        console.log("Empty");
+        this.filteredProjects = this.projects;
+      }
     }
+  },
+  mounted() {
+    this.getfilteredData();
   },
   created() {
     this.getProjects();
