@@ -82,14 +82,14 @@ export default {
   name: "Header",
   data() {
     return {
-      sessionStorage: window.sessionStorage,
-      nightMode: false
+      nightMode: this.$session.get("nightMode") || false
     };
   },
   watch: {
     nightMode: function() {
+      this.$session.set("nightMode", this.nightMode);
       // Emit this information to the parents component
-      this.$emit("nightMode-toggle", this.nightMode);
+      this.$emit("nightMode-toggle", this.$session.get("nightMode"));
     }
   }
 };

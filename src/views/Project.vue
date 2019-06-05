@@ -2,7 +2,7 @@
   <main role="main">
     <section
       class="jumbotron masthead text-center text-white"
-      v-bind:style="{ backgroundImage: 'url(' + this.cover.url + ')' }"
+      v-bind:style="{ backgroundImage: 'url(' + project.cover.url + ')' }"
     >
       <div class="overlay"></div>
       <div class="container animated pulse pulse">
@@ -46,8 +46,7 @@ export default {
   name: "Project",
   data() {
     return {
-      project: null,
-      cover: null
+      project: null
     };
   },
   methods: {
@@ -55,7 +54,6 @@ export default {
       this.$prismic.client.getByUID("projects", uid).then(document => {
         if (document) {
           this.project = document.data;
-          this.cover = document.data.cover;
         } else {
           this.$router.push({
             name: "not-found"

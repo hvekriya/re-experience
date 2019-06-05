@@ -6,6 +6,8 @@ import App from "./App.vue";
 import router from "./router";
 import "./registerServiceWorker";
 import moment from "moment";
+import VueSessionStorage from "vue-sessionstorage";
+Vue.use(VueSessionStorage);
 
 const accessToken = process.env.VUE_APP_PRISMIC;
 Vue.config.productionTip = false;

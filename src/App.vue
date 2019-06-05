@@ -8,6 +8,20 @@
     >
       <router-view/>
     </transition>
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>
+          Developed using Vue.js, Prismic.io and Bootstrap by Haresh Vekriya
+          <!-- <script>
+            var CurrentYear = new Date().getFullYear();
+            document.write(CurrentYear);
+          </script>-->
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -20,7 +34,7 @@ export default {
   },
   data() {
     return {
-      mode: false
+      mode: this.$session.get("nightMode") || false
     };
   },
   methods: {

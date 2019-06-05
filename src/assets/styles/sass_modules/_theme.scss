@@ -18,12 +18,19 @@ body {
 
   &.theme-dark {
     background: $dark;
-    color: $black;
+    color: $white;
 
     &.h1,
     .h2,
     .h3 {
       color: $white;
+    }
+    .card {
+      color: $black;
+    }
+
+    footer {
+      background-color: $dark;
     }
   }
 }
