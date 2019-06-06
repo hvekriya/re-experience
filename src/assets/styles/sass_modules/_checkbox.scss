@@ -23,6 +23,11 @@
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   transition: all 0.2s;
+
+  &:hover {
+    color: white;
+    background-color: $secondary;
+  }
 }
 
 .filter-pannel ul li label {
@@ -64,6 +69,6 @@
   position: absolute;
   opacity: 0;
 }
-.filter-pannel ul li input[type="checkbox"]:focus + label {
-  border: 2px solid $purple;
-}
+// .filter-pannel ul li input[type="checkbox"]:focus + label {
+//   border: 2px solid $purple;
+// }

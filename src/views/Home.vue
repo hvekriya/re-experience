@@ -36,6 +36,10 @@
           </ul>
         </div>
 
+        <p
+          v-if="filteredProjects.length === 0"
+        >No projects found with those tags &#128542; Try other tags</p>
+
         <div class="row">
           <div
             class="col-md-4 animated pulse bounce"
