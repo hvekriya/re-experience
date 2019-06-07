@@ -15,7 +15,9 @@
               to work well on own initiative and can demonstrate the high
               levels of motivation required to meet the tightest of deadlines.
               Even under significant pressure, I have a strong ability to
-              perform effectively.
+              perform effectively. During my spare time I like to learn new skills
+              and develop my existing skills. I also a lead volunteer at local temple
+              and help with community events by designing promotional material.
             </p>
           </div>
           <div class="col-sm-4 offset-md-1 py-4">
