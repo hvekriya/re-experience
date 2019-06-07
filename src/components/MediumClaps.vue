@@ -16,7 +16,7 @@
           >-->
           <div class="card-body">
             <h5 class="card-title">
-              <a :href="'/blog/post/' + item.url">{{ item.title }}</a>
+              <a :href="item.url">{{ item.title }}</a>
             </h5>
           </div>
         </div>
