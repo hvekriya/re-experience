@@ -34,7 +34,7 @@ export default {
   name: "Post",
   data() {
     return {
-      article: null
+      article: ""
     };
   },
   methods: {

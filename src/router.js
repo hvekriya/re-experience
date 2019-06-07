@@ -47,6 +47,11 @@ export default new Router({
       component: loadView("NotFound")
     },
     {
+      path: "/preview",
+      name: "Preview",
+      component: loadView("Preview")
+    },
+    {
       path: "*",
       redirect: {
         name: "not-found"

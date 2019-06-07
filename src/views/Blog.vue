@@ -54,7 +54,7 @@ export default {
   name: "Blog",
   data() {
     return {
-      posts: null,
+      posts: "",
       cover: {
         url:
           "https://images.unsplash.com/flagged/photo-1551301622-6fa51afe75a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
