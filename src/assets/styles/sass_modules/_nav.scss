@@ -1,5 +1,9 @@
 @import "../../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
+.navbar {
+  padding: 0;
+}
+
 .hamburger {
   &:focus {
     outline: none;

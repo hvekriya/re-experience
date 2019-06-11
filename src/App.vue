@@ -8,7 +8,7 @@
     >
       <router-view/>
     </transition>
-    <footer class="text-muted">
+    <footer class="text-muted mt-4">
       <div class="container">
         <p class="float-right">
           <a href="#">Back to top</a>
