@@ -63,7 +63,7 @@
         <a href="/" class="navbar-brand d-flex align-items-center">
           <strong>Haresh Vekriya</strong>
         </a>
-        <button
+        <!-- <button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -73,6 +73,21 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
+        </button>-->
+        <button
+          class="hamburger hamburger--spring navbar-toggler"
+          v-bind:class="{ 'is-active': menuIsActive }"
+          type="button"
+          v-on:click="toggleNav"
+          data-toggle="collapse"
+          data-target="#navbarHeader"
+          aria-controls="navbarHeader"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
         </button>
       </div>
     </div>
@@ -84,7 +99,8 @@ export default {
   name: "Header",
   data() {
     return {
-      nightMode: this.$session.get("nightMode") || false
+      nightMode: this.$session.get("nightMode") || false,
+      menuIsActive: false
     };
   },
   watch: {
@@ -92,6 +108,11 @@ export default {
       this.$session.set("nightMode", this.nightMode);
       // Emit this information to the parents component
       this.$emit("nightMode-toggle", this.$session.get("nightMode"));
+    }
+  },
+  methods: {
+    toggleNav() {
+      this.menuIsActive = !this.menuIsActive;
     }
   }
 };

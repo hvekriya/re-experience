@@ -1,0 +1,24 @@
+@import "../../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
+.hamburger {
+  &:focus {
+    outline: none;
+  }
+  .hamburger-box {
+    width: 25px;
+  }
+
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    background-color: $white;
+    width: 35px;
+    height: 3px;
+  }
+
+  &.is-active .hamburger-inner,
+  &.is-active .hamburger-inner::before,
+  &.is-active .hamburger-inner::after {
+    background-color: $red;
+  }
+}
