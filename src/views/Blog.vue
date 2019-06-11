@@ -8,7 +8,9 @@
       <div class="container animated pulse pulse">
         <h1 class="jumbotron-heading">Blog</h1>
         <p>
-          <a href="/" class="btn m-2">Go back</a>
+          <a href="/" class="btn m-2">
+            <span class="fas fa-arrow-alt-circle-left"></span> Go back
+          </a>
         </p>
       </div>
     </section>

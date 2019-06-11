@@ -13,7 +13,9 @@
           <p class="text-white">Posted on {{ article.first_publication_date | formatDate() }}</p>
         </center>
         <p>
-          <a href="/" class="btn m-2">Go back</a>
+          <a href="/" class="btn m-2">
+            <span class="fas fa-arrow-alt-circle-left"></span> Back to projects
+          </a>
         </p>
       </div>
     </section>

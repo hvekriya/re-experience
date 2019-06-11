@@ -8,7 +8,9 @@
         <h1 class="jumbotron-heading">Haresh Vekriya</h1>
         <p class="lead">UX Designer/Front-End Developer</p>
         <p>
-          <a href="/" class="btn m-2">Latest projects</a>
+          <a href="/" class="btn m-2">
+            <span class="fas fa-arrow-alt-circle-left"></span> Back to projects
+          </a>
         </p>
       </div>
     </section>
