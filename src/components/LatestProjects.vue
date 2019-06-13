@@ -42,7 +42,10 @@
               <p class="card-text">{{ item.data.challenge | readMore(200, ' ...') }}</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group w-100">
-                  <a :href="'/project/' + item.uid">Read more</a>
+                  <a :href="'/project/' + item.uid">
+                    Read more
+                    <!-- <span class="fas fa-arrow-right"></span> -->
+                  </a>
                 </div>
               </div>
               <span
