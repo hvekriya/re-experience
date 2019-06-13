@@ -45,7 +45,7 @@
                 <a href="https://dribbble.com/hvekriya" class="text-white">Dribble</a>
               </li>
               <li style="width: 20px; height:20px;">
-                <p>👋</p>
+                <span class="wave">👋</span>
               </li>
               <li>
                 <input type="checkbox" id="theme-toggle" v-model="nightMode">
