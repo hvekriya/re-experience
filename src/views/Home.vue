@@ -18,9 +18,10 @@
       </div>
     </section>
 
-    <LatestProjects/>
-    <BlogPosts/>
-    <MediumClaps/>
+    <LatestProjects />
+    <BlogPosts />
+    <MediumClaps />
+    <Tools />
   </main>
 </template>
 
@@ -28,13 +29,15 @@
 import LatestProjects from "../components/LatestProjects";
 import BlogPosts from "../components/BlogPosts";
 import MediumClaps from "../components/MediumClaps";
+import Tools from "../components/Tools";
 
 export default {
   name: "Home",
   components: {
     LatestProjects,
     BlogPosts,
-    MediumClaps
+    MediumClaps,
+    Tools
   },
   data() {
     return {
