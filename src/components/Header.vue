@@ -9,15 +9,16 @@
               Technology changes daily shapes what is possible in my life, and
               also gets me excited! I enjoy the challenge of researching and
               solving problems using the latest technology. I am very
-              passionate about design and front-end development (You can say I
-              am a hybrid designer), quick to grasp new ideas and concepts and
+              passionate about design and front-end development, quick to grasp new ideas and concepts and
               to develop innovative and creative solutions to problems. Able
               to work well on own initiative and can demonstrate the high
               levels of motivation required to meet the tightest of deadlines.
               Even under significant pressure, I have a strong ability to
-              perform effectively. During my spare time I like to learn new skills
-              and develop my existing skills. I also a lead volunteer at local temple
-              and help with community events by designing promotional material.
+              perform effectively. 
+              <br> <br>
+              During my spare time I like to learn new skills
+              and develop my existing skills. I am also a lead volunteer at local temple
+              and help with community events by designing promotional material and maintaining their online presence.
             </p>
           </div>
           <div class="col-sm-4 offset-md-1 py-4">

@@ -1,7 +1,10 @@
 <template>
   <div class="album">
     <div class="container">
-      <p class="h2 pb-4">Latest projects</p>
+      <p class="h2">Latest projects</p>
+      <p
+        class="text-muted pb-2"
+      >Some projects are password protected or not included due to Non-Disclosure Agreement(NDA)</p>
       <div class="filter-pannel mb-4">
         <ul>
           <li v-for="(tag, index) in tags" :key="index" class="m-1">
@@ -11,7 +14,7 @@
               :value="tag.value"
               v-model="tag.checked"
               v-on:change="getfilteredData"
-            >
+            />
             <label :for="`checkbox-${index}`">{{tag.value}}</label>
           </li>
         </ul>
@@ -36,7 +39,7 @@
               class="bd-placeholder-img card-img-top"
               :src="item.data.cover.url"
               :alt="item.data.cover.alt"
-            >
+            />
             <div class="card-body">
               <h5 class="card-title">{{ title.text }}</h5>
               <p class="card-text">{{ item.data.challenge | readMore(200, ' ...') }}</p>

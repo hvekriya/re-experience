@@ -6,7 +6,7 @@
     >
       <div class="container animated pulse pulse">
         <h1 class="jumbotron-heading">Haresh Vekriya</h1>
-        <p class="lead">UX Designer/Front-End Developer</p>
+        <p class="lead">UX/UI Designer</p>
         <p>
           <a href="/experience" class="btn m-2">Experience timeline</a>
           <a
