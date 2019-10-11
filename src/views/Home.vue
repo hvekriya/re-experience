@@ -8,7 +8,7 @@
         <h1 class="jumbotron-heading">Haresh Vekriya</h1>
         <p class="lead">UX/UI Designer</p>
         <p>
-          <a href="/experience" class="btn m-2">Experience timeline</a>
+          <a href="/experience" class="btn m-2">Experience</a>
           <a
             href="https://drive.google.com/file/d/1yqg2e0DIoe9NPoNETT-d9vmuRfEaGR5O/view?usp=sharing"
             class="btn m-2"

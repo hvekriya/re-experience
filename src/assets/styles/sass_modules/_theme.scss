@@ -17,7 +17,7 @@ body {
   color: $black;
 
   &.theme-dark {
-    background: $dark;
+    background: $gray-800;
     color: $white;
 
     &.h1,
@@ -26,7 +26,18 @@ body {
       color: $white;
     }
     .card {
-      color: $black;
+      color: $white;
+      &.bg-white {
+        background-color: $gray-700 !important;
+      }
+    }
+
+    .filter-pannel ul li label {
+      background-color: transparent;
+    }
+    .filter-pannel ul li input[type="checkbox"]:checked + label {
+      background-color: $purple;
+      border: none;
     }
 
     footer {
