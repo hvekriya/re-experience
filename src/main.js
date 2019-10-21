@@ -3,13 +3,16 @@ import PrismicVue from "prismic-vue";
 import linkResolver from "./prismic/link-resolver";
 import htmlSerializer from "./prismic/html-serializer";
 import App from "./App.vue";
-import router from "./router";
-import "./registerServiceWorker";
-import moment from "moment";
+
 import VueSessionStorage from "vue-sessionstorage";
 Vue.use(VueSessionStorage);
 
+import router from "./router";
+import "./registerServiceWorker";
+import moment from "moment";
+
 const accessToken = process.env.VUE_APP_PRISMIC;
+
 Vue.config.productionTip = false;
 
 Vue.use(PrismicVue, {

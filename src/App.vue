@@ -1,12 +1,12 @@
 <template>
   <div id="app" v-bind:class="{ 'theme-dark' : mode }">
-    <Header @nightMode-toggle="nightMode"/>
+    <Header @nightMode-toggle="nightMode" />
     <transition
       name="custom-classes-transition"
       enter-active-class="animated fadeIn"
       leave-active-class="animated fadeOut"
     >
-      <router-view/>
+      <router-view />
     </transition>
     <footer class="text-muted mt-4">
       <div class="container">
@@ -27,6 +27,7 @@
 
 <script>
 import Header from "./components/Header";
+import auth from "./auth";
 export default {
   name: "App",
   components: {
@@ -34,7 +35,8 @@ export default {
   },
   data() {
     return {
-      mode: this.$session.get("nightMode") || false
+      mode: this.$session.get("nightMode") || false,
+      loggedIn: auth.loggedIn()
     };
   },
   methods: {
@@ -42,6 +44,11 @@ export default {
     nightMode: function(params) {
       this.mode = params;
     }
+  },
+  created() {
+    auth.onChange = loggedIn => {
+      this.loggedIn = loggedIn;
+    };
   }
 };
 </script>

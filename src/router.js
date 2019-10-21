@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
-
+import auth from "@/auth";
 Vue.use(Router);
 
 function loadView(view) {
@@ -24,7 +24,8 @@ export default new Router({
     {
       path: "/project/:uid",
       name: "Project",
-      component: loadView("Project")
+      component: loadView("Project"),
+      beforeEnter: requireAuth
     },
     {
       path: "/blog/post/:uid",
@@ -40,6 +41,11 @@ export default new Router({
       path: "/skills",
       name: "Skills",
       component: loadView("Skills")
+    },
+    {
+      path: "/login",
+      name: "Login",
+      component: loadView("Login")
     },
     {
       path: "/not-found",
@@ -59,3 +65,14 @@ export default new Router({
     }
   ]
 });
+
+function requireAuth(to, from, next) {
+  if (!auth.loggedIn() && to.path === "/project/nca") {
+    next({
+      path: "/login",
+      query: { redirect: to.fullPath }
+    });
+  } else {
+    next();
+  }
+}

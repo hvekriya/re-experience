@@ -2,9 +2,7 @@
   <div class="album">
     <div class="container">
       <p class="h2">Latest projects</p>
-      <p
-        class="text-muted pb-2"
-      >Some projects are password protected or not included due to Non-Disclosure Agreement(NDA)</p>
+      <p class="text-muted pb-2">Some projects are password protected.</p>
       <div class="filter-pannel mb-4">
         <ul>
           <li v-for="(tag, index) in tags" :key="index" class="m-1">
