@@ -20,6 +20,7 @@
 
     <LatestProjects />
     <BlogPosts />
+    <DribblePosts />
     <MediumClaps />
     <Tools />
   </main>
@@ -30,6 +31,7 @@ import LatestProjects from "../components/LatestProjects";
 import BlogPosts from "../components/BlogPosts";
 import MediumClaps from "../components/MediumClaps";
 import Tools from "../components/Tools";
+import DribblePosts from "../components/DribblePosts";
 
 export default {
   name: "Home",
@@ -37,7 +39,8 @@ export default {
     LatestProjects,
     BlogPosts,
     MediumClaps,
-    Tools
+    Tools,
+    DribblePosts
   },
   data() {
     return {

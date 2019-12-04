@@ -8,27 +8,29 @@
           v-for="(item, index) in posts"
           :key="'project-' + index"
         >
-          <div
-            class="card mb-4 shadow p-3 mb-5 bg-white rounded"
-            v-for="(title, index) in item.data.title"
-            :key="'project-' + index"
-          >
-            <img
-              class="bd-placeholder-img card-img-top"
-              :src="item.data.cover.url"
-              :alt="item.data.cover.alt"
+          <a :href="'/blog/post/' + item.uid">
+            <div
+              class="card mb-4 shadow p-3 mb-5 bg-white rounded"
+              v-for="(title, index) in item.data.title"
+              :key="'project-' + index"
             >
-            <div class="card-body">
-              <h5 class="card-title">{{ title.text }}</h5>
-              <p class="card-text">{{ item.data.content | readMore(200, ' ...') }}</p>
-              <p class="text-muted">Posted on {{ item.first_publication_date | formatDate() }}</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group w-100">
-                  <a :href="'/blog/post/' + item.uid">Read more</a>
+              <img
+                class="bd-placeholder-img card-img-top"
+                :src="item.data.cover.url"
+                :alt="item.data.cover.alt"
+              />
+              <div class="card-body">
+                <h5 class="card-title">{{ title.text }}</h5>
+                <p class="card-text">{{ item.data.content | readMore(200, ' ...') }}</p>
+                <p class="text-muted">Posted on {{ item.first_publication_date | formatDate() }}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group w-100">
+                    <a :href="'/blog/post/' + item.uid">Read more</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <!-- <a href="/blog" class="btn m-2">View more posts</a> -->

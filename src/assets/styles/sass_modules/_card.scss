@@ -5,3 +5,10 @@
     transform: scale(1.05);
   }
 }
+
+a .card {
+  color: $dark;
+  &:hover {
+    color: $dark;
+  }
+}

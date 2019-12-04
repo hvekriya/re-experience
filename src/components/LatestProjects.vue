@@ -28,34 +28,36 @@
           v-for="(item, index) in filteredProjects"
           :key="'project-' + index"
         >
-          <div
-            class="card mb-4 shadow p-3 mb-5 bg-white rounded"
-            v-for="(title, index) in item.data.title"
-            :key="'project-' + index"
-          >
-            <img
-              class="bd-placeholder-img card-img-top"
-              :src="item.data.cover.url"
-              :alt="item.data.cover.alt"
-            />
-            <div class="card-body">
-              <h5 class="card-title">{{ title.text }}</h5>
-              <p class="card-text">{{ item.data.challenge | readMore(200, ' ...') }}</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group w-100">
-                  <a :href="'/project/' + item.uid">
-                    Read more
-                    <!-- <span class="fas fa-arrow-right"></span> -->
-                  </a>
+          <a :href="'/project/' + item.uid">
+            <div
+              class="card mb-4 shadow p-3 mb-5 bg-white rounded"
+              v-for="(title, index) in item.data.title"
+              :key="'project-' + index"
+            >
+              <img
+                class="bd-placeholder-img card-img-top"
+                :src="item.data.cover.url"
+                :alt="item.data.cover.alt"
+              />
+              <div class="card-body">
+                <h5 class="card-title">{{ title.text }}</h5>
+                <p class="card-text">{{ item.data.challenge | readMore(200, ' ...') }}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group w-100">
+                    <a :href="'/project/' + item.uid">
+                      Read more
+                      <!-- <span class="fas fa-arrow-right"></span> -->
+                    </a>
+                  </div>
                 </div>
+                <span
+                  v-for="(tag, index) in item.tags"
+                  :key="index"
+                  class="badge badge-pill badge-light mt-2"
+                >{{ tag }}</span>
               </div>
-              <span
-                v-for="(tag, index) in item.tags"
-                :key="index"
-                class="badge badge-pill badge-light mt-2"
-              >{{ tag }}</span>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <!-- <a href="/projects" class="btn m-2">View all projects</a> -->
