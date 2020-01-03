@@ -12,17 +12,20 @@
     </header>
     <OurServices />
     <OurRecentWork />
+    <Clients />
   </main>
 </template>
 
 <script>
 import OurRecentWork from "../components/OurRecentWork";
 import OurServices from "../components/OurServices";
+import Clients from "../components/Clients";
 export default {
   name: "Home",
   components: {
     OurRecentWork,
-    OurServices
+    OurServices,
+    Clients
   },
   data() {
     return {};
