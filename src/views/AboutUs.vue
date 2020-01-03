@@ -4,7 +4,7 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-heading text-uppercase">Blog</div>
+          <div class="intro-heading text-uppercase">About Us</div>
         </div>
       </div>
     </header>
@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: "Blog",
+  name: "AboutUs",
   data() {
     return {};
   }

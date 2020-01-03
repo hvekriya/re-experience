@@ -30,10 +30,10 @@
     "@vue/cli-plugin-babel": "^3.6.0",
     "@vue/cli-plugin-pwa": "^3.6.0",
     "@vue/cli-service": "^3.6.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.0",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"
   },
   "license": "Apache-2.0",
-  "repository": "https: //github.com/hvekriya/hvekriya.github.io"
+  "repository": "https: //github.com/hvekriya/re-experence.github.io"
 }

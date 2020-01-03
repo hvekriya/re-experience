@@ -1,50 +1,13 @@
-@import "prismic-edit-button";
-@import "resetr";
-@import "./sass_modules/variables";
-@import "./sass_modules/theme";
-@import "./sass_modules/overrides";
-@import "./sass_modules/button";
-@import "./sass_modules/timeline";
-@import "./sass_modules/masthead";
-@import "./sass_modules/checkbox";
-@import "./sass_modules/nav";
-@import "./sass_modules/card";
-@import "./sass_modules/dribble";
-
-.jumbotron {
-  border-radius: 0;
-}
-
-.navbar-dark .navbar-toggler {
-  color: white;
-  border: none;
-}
-
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-}
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
-
-.shadow-sm {
-  box-shadow: none !important;
-}
-
-.card {
-  border: none;
-}
-
-.card-body {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.block-img img {
-  // Allows the prismic image to use bootstrap reponsive class
-  max-width: 100%;
-}
+// Core variables and mixins
+@import "base/variables.scss";
+@import "base/mixins.scss";
+// Global CSS
+@import "base/page.scss";
+// Components
+@import "components/buttons.scss";
+@import "components/navbar.scss";
+// Layout
+@import "layout/masthead.scss";
+@import "layout/contact.scss";
+@import "layout/footer.scss";
+@import "layout/card.scss"
