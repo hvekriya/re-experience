@@ -12,7 +12,7 @@
     </header>
     <OurServices />
     <OurRecentWork />
-    <Clients />
+    <!-- <Clients /> -->
   </main>
 </template>
 
