@@ -37,9 +37,3 @@ export default {
   name: "Clients"
 };
 </script>
-
-<style>
-img {
-  width: 50%;
-}
-</style>

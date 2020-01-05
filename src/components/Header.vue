@@ -42,7 +42,7 @@ export default {
   name: "Header",
   methods: {
     handleScroll(event) {
-      if ($(window).scrollTop() > 800) {
+      if ($(window).scrollTop() > 300) {
         $(".navbar").addClass("navbar-gray");
       } else {
         $(".navbar").removeClass("navbar-gray");
