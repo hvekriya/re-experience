@@ -15,9 +15,11 @@
             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">CMS</h4>
-          <p
-            class="text-muted"
-          >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          <p class="text-muted">
+            We can help you with WordPress design and development. Websites, apps and blogs – by combining powerful features and flexibility,
+            anything can be built with WordPress.
+            If this is not enough we can create your site using headless CMS frameworks which allow full customisation.
+          </p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -25,9 +27,10 @@
             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Responsive Design</h4>
-          <p
-            class="text-muted"
-          >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          <p class="text-muted">
+            We work responsive by default approach and all our sites are developed and designed with all devices in mind. We want to deliver excellent user
+            experience on all platforms. With that in mind we can also enable Progressive Web Apps (PWA) for your website.
+          </p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -35,9 +38,10 @@
             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">UX/UI Design</h4>
-          <p
-            class="text-muted"
-          >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          <p class="text-muted">
+            We believe that users are center of all projects. We deliver all our projects with users in mind. We have specialists that can work with you and
+            users to make sure everything is captured and delivered based on yours and users needs.
+          </p>
         </div>
       </div>
     </div>
