@@ -12,7 +12,7 @@
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            <i class="fas fa-laptop-code fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">CMS</h4>
           <p class="text-muted">
@@ -24,7 +24,7 @@
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+            <i class="fas fa-mobile fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Responsive Design</h4>
           <p class="text-muted">
@@ -35,7 +35,7 @@
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+            <i class="fas fa-pencil-ruler fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">UX/UI Design</h4>
           <p class="text-muted">

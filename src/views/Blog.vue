@@ -8,6 +8,13 @@
         </div>
       </div>
     </header>
+    <section class="bg-light page-section">
+      <div class="container">
+        <div class="row">
+          <h2>Coming soon!</h2>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
