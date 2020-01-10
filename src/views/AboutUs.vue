@@ -13,7 +13,7 @@
         <div class="row">
           <h2>We are changing the way digital products are being using with latest trends and technology.</h2>
           <br>
-          <p> Re-Experience is a London based agency focusing on creating meaningful experiences. 
+          <p> Re-Experience is a London based Design Consulting Company focusing on creating meaningful experiences. 
             We specialise in CMS Development, responsive websites, PWA, SEO, E-commerce, Accessibility and UX/UI Design. 
             The company was founded in 2020 by Haresh Vekriya with the vision to help local businesses. </p>
           
