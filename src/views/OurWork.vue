@@ -8,9 +8,8 @@
         </div>
       </div>
     </header>
-    <!-- Portfolio Grid -->
-    <section class="bg-light page-section">
-      <div class="container">
+    <div class="container">
+      <div class="page-section col-lg-12">
         <!-- <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Our Recent Projects</h2>
@@ -52,7 +51,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </main>
 </template>
 

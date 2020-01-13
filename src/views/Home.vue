@@ -10,11 +10,12 @@
         </div>
       </div>
     </header>
-    <OurServices />
-    <OurRecentWork />
-    <!-- <Clients /> -->
-    <ContactDetails />
-
+    <div class="container">
+      <OurServices />
+      <OurRecentWork />
+      <!-- <Clients /> -->
+      <ContactDetails />
+    </div>
   </main>
 </template>
 
@@ -22,7 +23,7 @@
 import OurRecentWork from "../components/OurRecentWork";
 import OurServices from "../components/OurServices";
 import Clients from "../components/Clients";
-import ContactDetails from "../components/ContactDetails"
+import ContactDetails from "../components/ContactDetails";
 export default {
   name: "Home",
   components: {
