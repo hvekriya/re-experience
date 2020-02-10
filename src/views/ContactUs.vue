@@ -8,6 +8,7 @@
         </div>
       </div>
     </header>
+    <ContactDetails />
     <!-- Contact -->
     <section class="page-section" id="contact">
       <div class="container">
@@ -80,7 +81,6 @@
         </div>
       </div>
     </section>
-    <ContactDetails />
   </main>
 </template>
 
