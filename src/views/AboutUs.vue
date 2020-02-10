@@ -11,7 +11,7 @@
     <div class="container">
       <div class="page-section col-lg-12">
         <div class="row">
-          <h2>We are changing the way digital products are being using with latest trends and technology.</h2>
+          <h2>We are changing the way digital products are being used with the latest trends and technology.</h2>
           <br />
           <p>
             Re-Experience is a London based Design Consulting Company focusing on creating meaningful experiences.

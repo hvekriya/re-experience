@@ -80,14 +80,19 @@
         </div>
       </div>
     </section>
+    <ContactDetails />
   </main>
 </template>
 
 <script>
+import ContactDetails from "../components/ContactDetails";
 export default {
   name: "ContactUs",
   data() {
     return {};
+  },
+  components: {
+    ContactDetails
   }
 };
 </script>
