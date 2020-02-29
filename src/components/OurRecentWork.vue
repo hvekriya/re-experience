@@ -1,6 +1,6 @@
 <template>
   <!-- Portfolio Grid -->
-  <section class="bg-light page-section">
+  <section class="page-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
