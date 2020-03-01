@@ -14,7 +14,7 @@
           v-for="(item, index) in projects"
           :key="'project-' + index"
         >
-          <a href="/project/calipsa">
+          <a :href="item.data.website_link.url" v-if="item.data.website_link.url" target="_blank">
             <div class="card mb-4 shadow mb-5 bg-white rounded">
               <img
                 :src="item.data.cover.url"
@@ -29,7 +29,12 @@
                 <h5 class="card-title">{{ title.text }}</h5>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group w-100">
-                    <a :href="'/project/' + item.uid" class="card-link">Read more</a>
+                    <a
+                      v-if="item.data.website_link.url"
+                      :href="item.data.website_link.url"
+                      class="card-link"
+                      target="_blank"
+                    >View</a>
                   </div>
                 </div>
                 <span
