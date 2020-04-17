@@ -10,19 +10,13 @@
     </header>
     <div class="container">
       <div class="page-section col-lg-12">
-        <!-- <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Recent Projects</h2>
-            <h3 class="section-subheading text-muted">We have been busy just like you!</h3>
-          </div>
-        </div>-->
         <div class="row">
           <div
             class="col-md-4 animated pulse bounce"
             v-for="(item, index) in projects"
             :key="'project-' + index"
           >
-            <a href="/project/calipsa">
+            <a :href="item.data.website_link.url" v-if="item.data.website_link.url" target="_blank">
               <div class="card mb-4 shadow mb-5 bg-white rounded">
                 <img
                   :src="item.data.cover.url"
@@ -37,7 +31,12 @@
                   <h5 class="card-title">{{ title.text }}</h5>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group w-100">
-                      <a :href="'/project/' + item.uid" class="card-link">Read more</a>
+                      <a
+                        v-if="item.data.website_link.url"
+                        :href="item.data.website_link.url"
+                        class="card-link"
+                        target="_blank"
+                      >View</a>
                     </div>
                   </div>
                   <span
