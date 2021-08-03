@@ -5,7 +5,7 @@
       <div class="container">
         <div class="intro-text">
           <div class="intro-lead-in">Welcome to ReExperience!</div>
-          <div class="intro-heading text-uppercase">We are very excited to work with you.</div>
+          <div class="intro-heading text-uppercase animate__animated animate__bounce">We are very excited to work with you.</div>
           <a class="btn btn-primary btn-xl text-uppercase" href="/contact-us">Get in touch</a>
         </div>
       </div>
